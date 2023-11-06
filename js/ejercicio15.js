@@ -3,14 +3,14 @@
 let texto = prompt("Ingrese un texto:");
 let tamaño = texto.length;
 let vocales = "aeiou";
-let c;
+let c=0;
 
 for(let i=0 ; i<tamaño ; i++){
-    for(j=0 ; i<4 ; i++){
+    for(let j=0 ; j<5 ; j++){
         if(texto.charAt(i)==vocales.charAt(j)){
             c++;
             break;
         }
     }
-alert("'" + texto + "'" + " tiene " + c + " vocales");
 }
+alert("'" + texto + "'" + " tiene " + c + " vocales");
